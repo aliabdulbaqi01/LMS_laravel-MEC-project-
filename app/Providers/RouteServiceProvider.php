@@ -29,12 +29,24 @@ class RouteServiceProvider extends ServiceProvider
         });
 
         $this->routes(function () {
+            // api routes
             Route::middleware('api')
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
+            // web routes
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            // admin routes
+            Route::middleware('admin')
+                ->prefix('admin')
+                ->group(base_path('routes/admin.php'));
+
+            // instructor routes for instructor dashboard
+            Route::middleware('instructor')
+                ->prefix('instructor')
+                ->group(base_path('routes/instructor.php'));
         });
     }
 }
