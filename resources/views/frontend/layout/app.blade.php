@@ -32,7 +32,7 @@
 <body>
 
 <!-- start cssload-loader -->
-@include('frontend.layout.css_loader')
+@include('frontend.layout.css-loader')
 <!-- end cssload-loader -->
 
 <!--======================================
@@ -42,135 +42,7 @@
 <!--======================================
         END HEADER AREA
 ======================================-->
-
-<!--================================
-         START HERO AREA
-=================================-->
-@include('Frontend.sections.hero')
-<!--================================
-        END HERO AREA
-=================================-->
-
-<!--======================================
-        START FEATURE AREA
- ======================================-->
-@include('frontend.sections.feature')
-
-<!--======================================
-       END FEATURE AREA
-======================================-->
-
-<!--======================================
-        START CATEGORY AREA
-======================================-->
-@include('frontend.sections.category')
-
-<!--======================================
-        END CATEGORY AREA
-======================================-->
-
-<!--======================================
-        START COURSE AREA
-======================================-->
-@include('frontend.sections.course')
-
-<!--======================================
-        END COURSE AREA
-======================================-->
-
-<!--======================================
-        START COURSE AREA
-======================================-->
-@include('frontend.sections.course2')
-
-<!--======================================
-        END COURSE AREA
-======================================-->
-
-<!-- ================================
-       START FUNFACT AREA
-================================= -->
-@include('frontend.sections.funfact')
-
-<!-- ================================
-       START FUNFACT AREA
-================================= -->
-
-<!--======================================
-        START CTA AREA
-======================================-->
-@include('frontend.sections.cta')
-
-<!--======================================
-        END CTA AREA
-======================================-->
-
-<!--================================
-         START TESTIMONIAL AREA
-=================================-->
-@include('frontend.sections.testimonial')
-
-<!--================================
-        END TESTIMONIAL AREA
-=================================-->
-
-<div class="section-block"></div>
-
-<!--======================================
-        START ABOUT AREA
-======================================-->
-@include('frontend.sections.about')
-<!--======================================
-        END ABOUT AREA
-======================================-->
-
-<div class="section-block"></div>
-
-<!--======================================
-        START REGISTER AREA
-======================================-->
-@include('frontend.sections.register')
-
-<!--======================================
-        END REGISTER AREA
-======================================-->
-
-<div class="section-block"></div>
-
-<!-- ================================
-       START CLIENT-LOGO AREA
-================================= -->
-@include('frontend.sections.client_logo')
-
-<!-- ================================
-       START CLIENT-LOGO AREA
-================================= -->
-
-<!-- ================================
-       START BLOG AREA
-================================= -->
-@include('frontend.sections.blog')
-
-<!-- ================================
-       START BLOG AREA
-================================= -->
-
-<!--======================================
-        START GET STARTED AREA
-======================================-->
-@include('frontend.sections.started')
-
-<!-- ================================
-       START GET STARTED AREA
-================================= -->
-
-<!--======================================
-        START SUBSCRIBER AREA
-======================================-->
-@include('frontend.sections.subscriber')
-<!--======================================
-        END SUBSCRIBER AREA
-======================================-->
+@yield('content')
 
 <!-- ================================
          END FOOTER AREA
@@ -215,7 +87,7 @@
                     <a href="#" class="btn theme-btn flex-grow-1 mr-3"><i class="la la-shopping-cart mr-1 fs-18"></i>
                         Add to Cart</a>
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i
-                            class="la la-heart-o"></i></div>
+                                class="la la-heart-o"></i></div>
                 </div>
             </div>
         </div><!-- end card -->
@@ -250,7 +122,7 @@
                     <a href="#" class="btn theme-btn flex-grow-1 mr-3"><i class="la la-shopping-cart mr-1 fs-18"></i>
                         Add to Cart</a>
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i
-                            class="la la-heart-o"></i></div>
+                                class="la la-heart-o"></i></div>
                 </div>
             </div>
         </div><!-- end card -->
@@ -285,7 +157,7 @@
                     <a href="#" class="btn theme-btn flex-grow-1 mr-3"><i class="la la-shopping-cart mr-1 fs-18"></i>
                         Add to Cart</a>
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i
-                            class="la la-heart-o"></i></div>
+                                class="la la-heart-o"></i></div>
                 </div>
             </div>
         </div><!-- end card -->
@@ -320,7 +192,7 @@
                     <a href="#" class="btn theme-btn flex-grow-1 mr-3"><i class="la la-shopping-cart mr-1 fs-18"></i>
                         Add to Cart</a>
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i
-                            class="la la-heart-o"></i></div>
+                                class="la la-heart-o"></i></div>
                 </div>
             </div>
         </div><!-- end card -->
@@ -355,7 +227,7 @@
                     <a href="#" class="btn theme-btn flex-grow-1 mr-3"><i class="la la-shopping-cart mr-1 fs-18"></i>
                         Add to Cart</a>
                     <div class="icon-element icon-element-sm shadow-sm cursor-pointer" title="Add to Wishlist"><i
-                            class="la la-heart-o"></i></div>
+                                class="la la-heart-o"></i></div>
                 </div>
             </div>
         </div><!-- end card -->
