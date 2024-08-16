@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserDashboard\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 | important => authentication routes related to the admin exist in **auth file**
 */
 
-Route::get('/', function () {
-    return view('user.index');
-})->name('dashboard');
+Route::get('/', [UserController::class, 'index'])->name('dashboard');
 Route::get('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
