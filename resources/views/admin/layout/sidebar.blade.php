@@ -46,11 +46,10 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('categories.index')}}" class="nav-link">
+                    <a href="{{route('categories.index')}}" class="nav-link @if(str_contains(url()->current(), 'categories')) active @endif">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Category
-                            <span class="right badge badge-danger">New</span>
+                            Categories
                         </p>
                     </a>
                 </li>
