@@ -1,16 +1,18 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
 | Admin Dashboard Routes
 |--------------------------------------------------------------------------
 |
-| important => authentication routes related to the admin exist in **auth file**
+| important => routes/auth.php file has the authentication routes related to the admin (login, register,... etc)
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+
+//category
+Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');

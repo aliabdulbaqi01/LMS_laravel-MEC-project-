@@ -26,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
         View::Composer('user.layout.header', function(MyView $view) {
             return $view->with(['user', Auth::id()]);
         });
+
     }
 }

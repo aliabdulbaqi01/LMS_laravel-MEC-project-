@@ -39,6 +39,8 @@ class SettingController extends Controller
 
     //update profile
     public function updateProfile(UpdateProfileRequest $request, User $user) {
+        // if username or  email not equal to the user in the db add some validation then updated them
+
         $user->update($request->only('name', 'email','username','phone', 'address'));
 
         if($request->file('photo')) {

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [UserController::class, 'index'])->name('dashboard');
+
 Route::get('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
 
