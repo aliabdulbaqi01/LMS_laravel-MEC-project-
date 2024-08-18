@@ -33,7 +33,7 @@
                                             <li>
                                                 <p class="shop-cart-btn">
                                                     <i class="la la-heart-o"></i>
-                                                    <span class="dot-status bg-1"></span>
+{{--                                                    <span class="dot-status bg-1"></span>--}}
                                                 </p>
                                                 <ul class="cart-dropdown-menu after-none">
                                                     <li>
@@ -101,22 +101,22 @@
                                             </li>
                                         </ul>
                                     </div><!-- end shop-cart -->
-                                    <div class="shop-cart user-profile-cart">
+                                    <div class="shop-cart  user-profile-cart">
                                         <ul>
                                             <li>
                                                 <div class="shop-cart-btn">
                                                     <div class="avatar-xs">
                                                         <img class="rounded-full img-fluid" src="{{!empty($user->photo) ? url('upload/user_images/'.$user->photo) : url('upload/no_image.jpg')}}" alt="Avatar image">
                                                     </div>
-                                                    <span class="dot-status bg-1"></span>
+{{--                                                    <span class="dot-status bg-1"></span>--}}
                                                 </div>
                                                 <ul class="cart-dropdown-menu after-none p-0 notification-dropdown-menu">
                                                     <li class="menu-heading-block d-flex align-items-center">
-                                                        <a href="teacher-detail.html" class="avatar-sm flex-shrink-0 d-block">
+                                                        <a href="{{route('dashboard')}}" class="avatar-sm flex-shrink-0 d-block">
                                                             <img class="rounded-full img-fluid" src="{{!empty($user->photo) ? url('upload/user_images/'.$user->photo) : url('upload/no_image.jpg')}}" alt="Avatar image">
                                                         </a>
                                                         <div class="ml-2">
-                                                            <h4><a href="teacher-detail.html" class="text-black">{{$user->name}}</a></h4>
+                                                            <h4><a href="{{route('dashboard')}}" class="text-black">{{$user->name}}</a></h4>
                                                             <span class="d-block fs-14 lh-20">{{$user->gmail}}</span>
                                                         </div>
                                                     </li>
@@ -147,7 +147,7 @@
                                                     <li>
                                                         <ul class="generic-list-item">
                                                             <li>
-                                                                <a href="dashboard-settings.html">
+                                                                <a href="{{route('settings.index')}}">
                                                                     <i class="la la-gear mr-1"></i> Settings
                                                                 </a>
                                                             </li>

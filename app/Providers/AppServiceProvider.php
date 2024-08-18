@@ -15,9 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        View::Composer('user.layout.header', function(MyView $view) {
-            return $view->with(['user', Auth::id()]);
-        });
+        //
     }
 
     /**
@@ -25,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        View::Composer('user.layout.header', function(MyView $view) {
+            return $view->with(['user', Auth::id()]);
+        });
     }
 }

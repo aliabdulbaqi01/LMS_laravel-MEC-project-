@@ -59,7 +59,7 @@
                                     <label class="label-text">Username</label>
                                     <div class="form-group">
                                         <input class="form-control form--control
-                                        @error('username') is-invalid @enderror" type="text" name="username" placeholder="Email or Username" value="{{old('username')}}">
+                                        @error('username') is-invalid @enderror" type="text" name="username" placeholder=" Username" value="{{old('username')}}">
                                         <span class="la la-user input-icon"></span>
                                     </div>
                                     @error('username')

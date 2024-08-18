@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserDashboard\UserController;
+use App\Http\Controllers\User\SettingController;
+use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [UserController::class, 'index'])->name('dashboard');
 Route::get('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
+
+// setting
+Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
+Route::put('/settings/{user}/password', [SettingController::class, 'updatePassword'])->name('settings.updatePassword');
+Route::put('/settings/{user}/profile', [SettingController::class, 'updateProfile'])->name('settings.updateProfile');

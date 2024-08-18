@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{asset('frontend')}}/css/fancybox.css">
     <link rel="stylesheet" href="{{asset('frontend')}}/css/style.css">
     @stack('css')
-    @stack('jquery')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- end inject -->
 </head>
 <body>
@@ -99,5 +99,6 @@
 <script src="{{asset('frontend')}}/js/jquery.MultiFile.min.js"></script>
 <script src="{{asset('frontend')}}/js/main.js"></script>
 @stack('js')
+
 </body>
 </html>
