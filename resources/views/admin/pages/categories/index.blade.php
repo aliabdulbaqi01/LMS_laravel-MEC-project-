@@ -21,27 +21,29 @@
                 <table class="jsgrid-table">
                     <thead>
                 <tr class="jsgrid-header-row">
-                    <th class="jsgrid-header-cell jsgrid-header-sortable jsgrid-header-sort jsgrid-header-sort-asc" style="width: 150px;">Id</th>
-                    <th class="jsgrid-header-cell jsgrid-align-right jsgrid-header-sortable" style="width: 50px;">Image</th>
+                    <th class="jsgrid-header-cell jsgrid-header-sortable jsgrid-header-sort jsgrid-header-sort-asc" style="width: 40px;">Id</th>
+                    <th class="jsgrid-header-cell jsgrid-align-right jsgrid-header-sortable" style="width: 100px;">Image</th>
                     <th class="jsgrid-header-cell jsgrid-header-sortable" style="width: 200px;">Name</th>
                     <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">Slug</th>
-                    <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 100px;">Actions</th>
+                    <th class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable" style="width: 200px;">Actions</th>
                 </tr>
                     </thead>
                     <tbody>
                     @foreach($categories as $category)
                         <tr>
                             <td>{{$category->id}}</td>
-                            <td><img src="{{$category->image}}" alt="Category"></td>
+                            <td><img class="show-image" src="{{ $category->image ? asset($category->image) : url('upload/no_image.jpg')}}" alt="Category"></td>
                             <td>{{$category->name}}</td>
                             <td>{{$category->slug}}</td>
-                            <td><a href="{{route('categories.edit', $category->id)}}" class="btn btn-info">Edit</a>
+                            <td>
+                                <a href="{{route('categories.show', $category->id)}}" class="btn btn-success">Show</a>
 
-                                <a href="{{route('categories.show', $category->id)}}" class="btn btn-danger">Show</a>
-                                <form action="{{route('categories.destroy', $category->id)}}" method="post">
+                                <a href="{{route('categories.edit', $category->id)}}"  class="btn btn-info">Edit</a>
+
+                                <form action="{{route('categories.destroy', $category->id)}}" id="delete" method="post" style="display: inline-block">
                                     @csrf
                                     @method('delete')
-                                    <input type="submit" class="btn btn-danger" value="Delete">
+                                    <input type="submit" id="delete" class="btn btn-danger" value="Delete">
                                 </form>
                             </td>
                         </tr>

@@ -18,5 +18,5 @@ Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboar
 Route::get('/logout', [AuthenticateAdminController::class, 'destroy'])
     ->name('admin.logout');
 //category
-Route::resource('categories', CategoryController::class)->only('index', 'create', 'edit', 'destroy', 'show');
+Route::resource('categories', CategoryController::class);
 

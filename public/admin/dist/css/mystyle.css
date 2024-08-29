@@ -1,0 +1,13 @@
+.center {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.show-image {
+    width: 60px;
+    height: auto;
+}
+#showImage {
+    width: 80px;
+    height: auto;
+}
