@@ -53,6 +53,22 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('subcategories.index')}}" class="nav-link @if(str_contains(url()->current(), 'subcategories')) active @endif">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Sub Categories
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('coupons.index')}}" class="nav-link @if(str_contains(url()->current(), 'coupons')) active @endif">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Coupons
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
