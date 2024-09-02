@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\AuthenticateInstructorController;
+use App\Http\Controllers\Instructor\InstructorController;
+use App\Http\Controllers\instructor\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/dashboard',[InstructorController::class,'index'])->name('instructor.dashboard');
+Route::get('/logout',[AuthenticateInstructorController::class,'destroy'])->name('instructor.logout');
 
+/*
+ * profile and change password
+ */
+Route::get('/profile',[ProfileController::class,'edit'])->name('instructor.profile');
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthenticateAdminController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\AuthenticateInstructorController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
@@ -20,6 +21,11 @@ Route::middleware('guest')->group(function () {
         ->name('admin.login');
     Route::post('admin/login', [AuthenticateAdminController::class, 'store']);
 
+    /*
+     * instructor login
+     */
+    Route::get('instructor/login', [AuthenticateInstructorController::class, 'create'])->name('instructor.login');
+    Route::post('instructor/login', [AuthenticateInstructorController::class, 'store']);
 
     /*
      * user authentication
