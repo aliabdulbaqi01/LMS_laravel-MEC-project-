@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticateInstructorController;
+use App\Http\Controllers\Instructor\CourseController;
 use App\Http\Controllers\Instructor\InstructorController;
 use App\Http\Controllers\instructor\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,6 @@ Route::get('/logout',[AuthenticateInstructorController::class,'destroy'])->name(
  */
 Route::get('/profile',[ProfileController::class,'edit'])->name('instructor.profile');
 
+// courses
+Route::resource('courses', CourseController::class);
+Route::get('/subcategory/ajax/{category_id}', [CourseController::class, 'getSubCategory']);

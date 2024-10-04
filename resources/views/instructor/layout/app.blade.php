@@ -215,7 +215,8 @@
     <script src="{{asset('instructor')}}/assets/js/index.js"></script>
     <!--app JS-->
     <script src="{{asset('instructor')}}/assets/js/app.js"></script>
-
+    {{--    for push scripts--}}
+    @stack('js')
 </body>
 
 </html>
