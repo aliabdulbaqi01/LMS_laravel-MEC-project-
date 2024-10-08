@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -10,7 +12,11 @@ class FrontController extends Controller
      * Home Page
      */
     public function index() {
-        return view('frontend.index');
+        $categories = Category::orderBy('name', 'ASC')->limit(6)->get();
+        $courses = Course::where('status', 1)->orderBy('id', 'ASC')->limit(6)->get();
+
+
+        return view('frontend.index', compact('categories', 'courses'));
     }
 
     /*
