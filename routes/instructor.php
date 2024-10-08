@@ -25,11 +25,16 @@ Route::get('/logout',[AuthenticateInstructorController::class,'destroy'])->name(
  */
 Route::get('/profile',[ProfileController::class,'edit'])->name('instructor.profile');
 
+
 // courses
 Route::resource('courses', CourseController::class);
 Route::get('/subcategory/ajax/{category_id}', [CourseController::class, 'getSubCategory']);
+
+
 // lectures and sections
 Route::resource('lectures', LectureController::class);
+Route::post('/lec/store', [LectureController::class, 'store']);
+
 
 // course sections
 Route::get('/sections/{course}', [SectionController::class, 'index'])->name('sections.index');
