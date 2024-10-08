@@ -4056,7 +4056,7 @@ div.datedropper .picker .pick-lg-b li {
       color: #233d63;
       font-size: 17px; }
 
-/*===== quiz-course-nav =====*/
+/*===== quiz-courses-nav =====*/
 .quiz-course-nav {
   position: relative;
   z-index: 1; }
@@ -4843,7 +4843,7 @@ div.datedropper .picker .pick-lg-b li {
     opacity: 1;
     visibility: visible; }
 
-/*======= course-badge =======*/
+/*======= courses-badge =======*/
 .course-badge {
   background-color: #F68A03;
   color: #fff;
@@ -6268,7 +6268,7 @@ div.datedropper .picker .pick-lg-b li {
 .skillbar-title {
   font-size: 15px; }
 
-/*======== my-course-progress-bar-wrap ========*/
+/*======== my-courses-progress-bar-wrap ========*/
 .my-course-progress-bar-wrap .skillbar-title {
   width: 26%; }
   @media (max-width: 1024px) {
@@ -6672,7 +6672,7 @@ div.datedropper .picker .pick-lg-b li {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-/*================ course-overview-card ===================*/
+/*================ courses-overview-card ===================*/
 .course-overview-card {
   margin-bottom: 30px; }
   .course-overview-card .overview-list-item {
@@ -6760,7 +6760,7 @@ div.datedropper .picker .pick-lg-b li {
       -moz-border-radius: 100%;
       border-radius: 100%; }
 
-/*================ course-dashboard-container ===================*/
+/*================ courses-dashboard-container ===================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .course-dashboard-container {
     display: block !important; } }
@@ -6773,7 +6773,7 @@ div.datedropper .picker .pick-lg-b li {
   .course-dashboard-container {
     display: block !important; } }
 
-/*================ course-dashboard-column ===================*/
+/*================ courses-dashboard-column ===================*/
 .course-dashboard-column {
   width: 75%;
   -webkit-transition: all 0.5s;
@@ -7065,7 +7065,7 @@ div.datedropper .picker .pick-lg-b li {
     .lecture-announcement-wrap {
       width: auto; } }
 
-/*============= my-course-filter-wrap ==============*/
+/*============= my-courses-filter-wrap ==============*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .my-course-filter-wrap {
     display: block !important; } }
@@ -7078,7 +7078,7 @@ div.datedropper .picker .pick-lg-b li {
   .my-course-filter-wrap {
     display: block !important; } }
 
-/*============= my-course-sort-by-content ==============*/
+/*============= my-courses-sort-by-content ==============*/
 .my-course-sort-by-content {
   width: 18%; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7091,7 +7091,7 @@ div.datedropper .picker .pick-lg-b li {
     .my-course-sort-by-content {
       width: 100%; } }
 
-/*============= my-course-filter-by-content ==============*/
+/*============= my-courses-filter-by-content ==============*/
 .my-course-filter-by-content {
   padding-left: 10px;
   width: 50%; }
@@ -7160,7 +7160,7 @@ div.datedropper .picker .pick-lg-b li {
       width: 100%;
       padding-left: 0; } }
 
-/*================ course-alert-info ===================*/
+/*================ courses-alert-info ===================*/
 .course-alert-info .close {
   padding: 22px 15px; }
 
@@ -7173,13 +7173,13 @@ div.datedropper .picker .pick-lg-b li {
   .course-alert-info .alert-link:hover {
     color: #ec5252; }
 
-/*================ my-course-info ===================*/
+/*================ my-courses-info ===================*/
 @media (max-width: 375px) {
   .my-course-info form {
     margin-top: 15px;
     width: 100%; } }
 
-/*================ course-dashboard-side-heading ===================*/
+/*================ courses-dashboard-side-heading ===================*/
 .course-dashboard-side-heading {
   padding: 20px;
   position: relative; }
@@ -7345,7 +7345,7 @@ div.datedropper .picker .pick-lg-b li {
   .course-item-meta i {
     margin-right: 3px; }
 
-/*================ course-dashboard-sidebar-column ===================*/
+/*================ courses-dashboard-sidebar-column ===================*/
 .course-dashboard-sidebar-column {
   width: 25%;
   height: 100vh;

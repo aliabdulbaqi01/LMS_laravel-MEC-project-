@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="{{asset('instructor')}}/assets/css/dark-theme.css"/>
     <link rel="stylesheet" href="{{asset('instructor')}}/assets/css/semi-dark.css"/>
     <link rel="stylesheet" href="{{asset('instructor')}}/assets/css/header-colors.css"/>
+
+
+    {{--    toaster CSS--}}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
     @stack('css')
     <title>@yield('title')</title>
 </head>
@@ -215,8 +221,22 @@
     <script src="{{asset('instructor')}}/assets/js/index.js"></script>
     <!--app JS-->
     <script src="{{asset('instructor')}}/assets/js/app.js"></script>
+
     {{--    for push scripts--}}
     @stack('js')
+
+    {{-- toaster Js--}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            @php
+                toastr()->error($error)
+            @endphp
+        @endforeach
+    @endif
+    </script>
 </body>
 
 </html>

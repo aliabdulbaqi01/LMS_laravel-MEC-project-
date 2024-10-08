@@ -200,6 +200,6 @@
                 </div><!-- end card -->
             </div><!-- end tab-content -->
         </div><!-- end container -->
-    </div><!-- end course-wrapper -->
+    </div><!-- end courses-wrapper -->
 </section><!-- end courses-area -->
 

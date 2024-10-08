@@ -18,7 +18,7 @@ Author Email:   contact@techydevs.com
         var isMenuOpen = false;
         var togglePassword = $('.toggle-password');
         var heroSlider = $('.hero-slider');
-        var courseCarousel = $('.course-carousel');
+        var courseCarousel = $('.courses-carousel');
         var viewMoreCarousel = $('.view-more-carousel');
         var viewMoreCarouselTwo = $('.view-more-carousel-2');
         var testimonialCarousel = $('.testimonial-carousel');
@@ -30,7 +30,7 @@ Author Email:   contact@techydevs.com
         var cardPreview = $('.card-preview');
         var userTextEditor = $('.user-text-editor');
         var categoryCarousel = $('.category-carousel');
-        var featuredCourseCarousel = $('.featured-course-carousel');
+        var featuredCourseCarousel = $('.featured-courses-carousel');
         var fullscreenSlider = $('.fullscreen-slider');
         var isotopListItem = $('.generic-portfolio-list');
         var myFancybox = $('[data-fancybox="gallery"]');
@@ -430,7 +430,7 @@ Author Email:   contact@techydevs.com
                 }
             });
         }
-        /*==== featured-course-carousel =====*/
+        /*==== featured-courses-carousel =====*/
         if ($(featuredCourseCarousel).length) {
             $(featuredCourseCarousel).owlCarousel({
                 loop: true,
@@ -558,8 +558,8 @@ Author Email:   contact@techydevs.com
                 maxTags: 3
             });
         }
-        /*==== Lesson sidebar course content menu =====*/
-        $('.curriculum-sidebar-list > .course-item-link').on('click', function () {
+        /*==== Lesson sidebar courses content menu =====*/
+        $('.curriculum-sidebar-list > .courses-item-link').on('click', function () {
             var self = $(this);
             self.addClass('active');
             self.siblings().removeClass('active');
@@ -572,11 +572,11 @@ Author Email:   contact@techydevs.com
         });
         /*==== sidebar-close =====*/
         $document.on('click', '.sidebar-close', function () {
-            $('.course-dashboard-sidebar-column, .course-dashboard-column, .sidebar-open').addClass('active');
+            $('.courses-dashboard-sidebar-column, .courses-dashboard-column, .sidebar-open').addClass('active');
         });
         /*==== sidebar-open =====*/
         $document.on('click', '.sidebar-open', function () {
-            $('.course-dashboard-sidebar-column, .course-dashboard-column, .sidebar-open').removeClass('active');
+            $('.courses-dashboard-sidebar-column, .courses-dashboard-column, .sidebar-open').removeClass('active');
         });
         /*==== When ask-new-question-btn will click then this action will work =====*/
         $document.on('click', '.ask-new-question-btn', function () {

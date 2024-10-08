@@ -1,4 +1,4 @@
-/*================ course-overview-card ===================*/
+/*================ courses-overview-card ===================*/
 .course-overview-card {
   margin-bottom: 30px;
   .overview-list-item {
@@ -89,7 +89,7 @@
     }
   }
 }
-/*================ course-dashboard-container ===================*/
+/*================ courses-dashboard-container ===================*/
 .course-dashboard-container {
   @media #{$tab_device} {
     display: block !important;
@@ -102,7 +102,7 @@
   }
 }
 
-/*================ course-dashboard-column ===================*/
+/*================ courses-dashboard-column ===================*/
 .course-dashboard-column {
   width: 75%;
   @include transition(0.5s);
@@ -415,7 +415,7 @@
     width: auto;
   }
 }
-/*============= my-course-filter-wrap ==============*/
+/*============= my-courses-filter-wrap ==============*/
 .my-course-filter-wrap {
   @media #{$tab_device} {
     display: block !important;
@@ -427,7 +427,7 @@
     display: block !important;
   }
 }
-/*============= my-course-sort-by-content ==============*/
+/*============= my-courses-sort-by-content ==============*/
 .my-course-sort-by-content {
   width: 18%;
   @media #{$tab_device} {
@@ -440,7 +440,7 @@
     width: 100%;
   }
 }
-/*============= my-course-filter-by-content ==============*/
+/*============= my-courses-filter-by-content ==============*/
 .my-course-filter-by-content {
   padding-left: 10px;
   width: 50%;
@@ -508,7 +508,7 @@
     padding-left: 0;
   }
 }
-/*================ course-alert-info ===================*/
+/*================ courses-alert-info ===================*/
 .course-alert-info {
   .close {
     padding: 22px 15px;
@@ -520,7 +520,7 @@
     }
   }
 }
-/*================ my-course-info ===================*/
+/*================ my-courses-info ===================*/
 .my-course-info {
   form {
     @media #{$device-375px} {
@@ -529,7 +529,7 @@
     }
   }
 }
-/*================ course-dashboard-side-heading ===================*/
+/*================ courses-dashboard-side-heading ===================*/
 .course-dashboard-side-heading {
   padding: 20px;
   position: relative;
@@ -692,7 +692,7 @@
     margin-right: 3px;
   }
 }
-/*================ course-dashboard-sidebar-column ===================*/
+/*================ courses-dashboard-sidebar-column ===================*/
 .course-dashboard-sidebar-column {
   width: 25%;
   height: 100vh;
