@@ -13,7 +13,7 @@
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                        <li class="breadcrumb-item"><a href="{{route('courses.index')}}"><i class="bx bx-home-alt"></i></a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">All Course</li>
                     </ol>
@@ -53,8 +53,9 @@
                                 <td>{{ $item->selling_price }}</td>
                                 <td>{{ $item->discount_price }}</td>
                                 <td>
-                                    <a href="{{ route('courses.edit',$item->id) }}" class="btn btn-info px-5">Edit </a>
-                                    <a href="{{ route('courses.destroy',$item->id) }}" class="btn btn-danger px-5" id="delete">Delete </a>
+                                    <a href="{{ route('courses.edit',$item->id) }}" class="btn btn-info" title="Edit"><i class="lni lni-eraser"></i> </a>
+                                    <a href="{{ route('courses.destroy',$item->id) }}" class="btn btn-danger" id="delete" title="delete"><i class="lni lni-trash"></i> </a>
+                                    <a href="{{ route('sections.index',$item->id) }}" class="btn btn-warning" title="Lecture"><i class="lni lni-list"></i> </a>
                                 </td>
                             </tr>
                         @endforeach

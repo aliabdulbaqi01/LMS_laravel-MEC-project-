@@ -3,7 +3,9 @@
 use App\Http\Controllers\Auth\AuthenticateInstructorController;
 use App\Http\Controllers\Instructor\CourseController;
 use App\Http\Controllers\Instructor\InstructorController;
+use App\Http\Controllers\Instructor\LectureController;
 use App\Http\Controllers\instructor\ProfileController;
+use App\Http\Controllers\Instructor\SectionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +28,9 @@ Route::get('/profile',[ProfileController::class,'edit'])->name('instructor.profi
 // courses
 Route::resource('courses', CourseController::class);
 Route::get('/subcategory/ajax/{category_id}', [CourseController::class, 'getSubCategory']);
+// lectures and sections
+Route::resource('lectures', LectureController::class);
+
+// course sections
+Route::get('/sections/{course}', [SectionController::class, 'index'])->name('sections.index');
+Route::resource('sections', SectionController::class)->only('store');
